@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/earlyaccess/opensanshebrew.css');
+
+$fonts-path: '/assets/fonts';
+
+@font-face {
+  font-family: 'Takeaway-sans';
+  src: url('#{$fonts-path}/eot/TakeawaySans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('#{$fonts-path}/eot/TakeawaySans-Campaign.eot'); /* IE9 Compat Modes */
+  src: url('#{$fonts-path}/woff2/TakeawaySans-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('#{$fonts-path}/woff2/TakeawaySans-Campaign.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('#{$fonts-path}/woff/TakeawaySans-Campaign.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('#{$fonts-path}/woff/TakeawaySans-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('#{$fonts-path}/ttf/TakeawaySans-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('#{$fonts-path}/ttf/TakeawaySans-Campaign.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Takeaway-sans-campaign';
+  src: url('#{$fonts-path}/eot/TakeawaySans-Campaign.eot'),
+    /* IE9 Compat Modes */ url('#{$fonts-path}/woff2/TakeawaySans-Campaign.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('#{$fonts-path}/woff/TakeawaySans-Campaign.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('#{$fonts-path}/ttf/TakeawaySans-Campaign.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Takeaway-sans';
+  src: url('#{$fonts-path}/eot/TakeawaySans-Bold.eot'),
+    /* IE9 Compat Modes */ url('#{$fonts-path}/woff2/TakeawaySans-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('#{$fonts-path}/woff/TakeawaySans-Bold.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('#{$fonts-path}/ttf/TakeawaySans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}

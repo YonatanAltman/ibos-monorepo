@@ -2,7 +2,7 @@
   "name": "ibos",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "ibis-monorepo-template",
+  "prefix": "ibis",
   "sourceRoot": "apps/ibos/src",
   "tags": [],
   "targets": {

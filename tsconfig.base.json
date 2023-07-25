@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ibis-monorepo-template/common/common-interface": [
+        "libs/common/common-interface/src/index.ts"
+      ],
+      "@ibis-monorepo-template/ui/user-menu-ui": [
+        "libs/ui/user-menu-ui/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

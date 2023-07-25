@@ -1,0 +1,50 @@
+{
+  "name": "ui-user-menu-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/user-menu-ui/src",
+  "prefix": "ibis",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ui/user-menu-ui/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/user-menu-ui/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui/user-menu-ui/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui/user-menu-ui/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/user-menu-ui/**/*.ts",
+          "libs/ui/user-menu-ui/**/*.html"
+        ]
+      }
+    }
+  }
+}
