@@ -2,7 +2,11 @@
   "name": "@ibis-monorepo-template/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve ibos",
+    "start:ibos": "nx serve ibos -o",
+    "start:partner": "nx serve partner -o --port=4321"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.1.0",
